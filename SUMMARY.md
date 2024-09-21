@@ -43,10 +43,10 @@
 
 ## Built-in Templates <a href="#templates" id="templates"></a>
 
-* [Vite](templates/vite.md)
-* [Vite + TypeScript](templates/vite-+-typescript.md)
 * [Webpack](templates/webpack-template.md)
 * [Webpack + Typescript](templates/typescript-+-webpack-template.md)
+* [Vite](templates/vite.md)
+* [Vite + TypeScript](templates/vite-+-typescript.md)
 
 ## Guides
 
