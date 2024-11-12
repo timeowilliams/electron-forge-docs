@@ -32,6 +32,28 @@ You can use this hook to generate any static files or resources your app require
 
 For instance, you could use this hook to generate a license file containing the license of all your dependencies.
 
+### `preStart`
+
+* **Arguments:**
+  * **`config:`**[**`ResolvedForgeConfig`**](https://js.electronforge.io/interfaces/\_electron\_forge\_shared\_types.ResolvedForgeConfig.html) - Forge configuration object
+* **Returns: `Promise<void>`**
+
+`preStart()` is invoked before Forge's **`start`** command launches the app in dev mode.
+
+You can use this hook to run prepatory logic before your app launches.
+
+{% code title="forge.config.js" fullWidth="false" %}
+```javascript
+module.exports = {
+  hooks: {
+    preStart: async (forgeConfig) => {
+      console.log(`Starting up app on platform: ${process.platform}`);
+    }
+  }
+};
+```
+{% endcode %}
+
 ### `postStart`
 
 * **Arguments:**
