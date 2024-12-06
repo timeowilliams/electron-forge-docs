@@ -45,7 +45,7 @@ module.exports = {
 ```
 {% endcode %}
 
-All configuration options are optional, and options are documented in the API docs for [`MakerPkgConfig`](https://js.electronforge.io/interfaces/\_electron\_forge\_maker\_pkg.MakerPKGConfig.html).
+All configuration options are optional, and options are documented in the API docs for [`MakerPkgConfig`](https://js.electronforge.io/interfaces/_electron_forge_maker_pkg.MakerPKGConfig.html).
 
 ### Adding installation scripts
 
@@ -67,7 +67,7 @@ my-app
     └── preinstall
 ```
 
-Then, your Forge configuration would need to point to the `./scripts` folder.
+Then, configure the Maker point its `scripts` property to the `./scripts` folder.
 
 <pre class="language-javascript" data-title="forge.config.js"><code class="lang-javascript"><strong>const path = require('node:path');
 </strong>
@@ -76,7 +76,7 @@ module.exports = {
     {
       name: '@electron-forge/maker-pkg',
       config: {
-<strong>        install: path.join(__dirname, 'scripts)
+<strong>        scripts: path.join(__dirname, 'scripts')
 </strong>      }
     }
   ]
