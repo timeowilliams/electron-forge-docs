@@ -59,6 +59,11 @@ So you've got an **amazing** application there, and you want to package it all u
 ```bash
 npm run make
 ```
+For those looking to publish to the Apple Store, you'll need to create a universal build. 
+
+```bash
+npm run make -- --arch=universal --platform=mas
+```
 
 ## Publishing your app
 
